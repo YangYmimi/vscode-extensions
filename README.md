@@ -42,29 +42,45 @@
 
 ```JSON
 {
-    "prettier.endOfLine": "crlf",
-    "prettier.printWidth": 120,
-    "prettier.semi": false, // 句尾不添加分号
-    "prettier.trailingComma": "none", // 在对象或数组最后一个元素后面是否加逗号（在ES5中加尾逗号）
-    "prettier.arrowParens": "avoid", // (x) => {} 箭头函数参数只有一个时是否要有小括号。avoid：省略括号
-    "prettier.bracketSpacing": true, // 在对象，数组括号与文字之间加空格 "{ foo: bar }"
+    "explorer.confirmDelete": false,
+    "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
-    "[vue]": {
-        "editor.defaultFormatter": "octref.vetur"
-    },
-    "vetur.format.defaultFormatter.ts": "prettier-tslint",
+    "eslint.run": "onSave",
     "vetur.format.defaultFormatter.js": "prettier-eslint",
-    "vetur.format.defaultFormatter.html": "prettier",
-    "autoimport.useSemiColon": false,
-    "editor.wordWrapColumn": 120,
+    "[vue]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "editor.tabSize": 2,
     "editor.renderWhitespace": "boundary",
-    "editor.formatOnPaste": true,
+    "editor.wordWrap": "wordWrapColumn",
     "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.autoClosingBrackets": "always",
-    "editor.autoClosingQuotes": "always",
+    "vetur.validation.template": false,
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "explorer.confirmDragAndDrop": false,
+    "files.eol": "\n",
     "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-    "terminal.integrated.shell.windows": "D:\\Git\\bin\\bash.exe"
+    "prettier.trailingComma": "none",
+    "prettier.proseWrap": "always",
+    "prettier.jsxBracketSameLine": true,
+    "autoimport.doubleQuotes": true,
+    "prettier.insertPragma": true,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "security.workspace.trust.untrustedFiles": "open",
+    "[go]": {
+        "editor.renderWhitespace": "none",
+        "editor.defaultFormatter": "golang.go"
+    },
+    "gopls": {
+        "formatting.gofumpt": true
+    },
+    "go.lintTool": "golint"
 }
 ```
